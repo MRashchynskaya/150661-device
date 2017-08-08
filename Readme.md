@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Margarita Roshinskaya](https://up.htmlacademy.ru/htmlcss/18/user/150661).
-* Наставник: `Неизвестно`.
+* Студент: [Маргарита Рощинская](https://up.htmlacademy.ru/htmlcss/18/user/150661).
+* Наставник: [Сергей Павлов](https://up.htmlacademy.ru/htmlcss/18/user/150661).
 
 ---
 
