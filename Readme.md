@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Маргарита Рощинская](https://up.htmlacademy.ru/htmlcss/18/user/150661).
-* Наставник: [Сергей Павлов](https://up.htmlacademy.ru/htmlcss/18/user/150661).
+* Наставник: [Сергей Павлов](https://htmlacademy.ru/profile/id109209).
 
 ---
 
