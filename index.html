@@ -8,17 +8,16 @@
     <!-- Start of header -->
     <header class="main-header">
       <!--Start left side of header -->
-      <div class="left-side-header">
+      <nav class="left-side-header">
         <a class="main-header-logo">Device</a>
           <form class="header-search" method="get" action="#">
             <input type="search" name="search" placeholder="Поиск по сайту">
             <button class="header-search-btn" type="submit">Найти</button>
           </form>
-          <nav class="catalog-nav">
-            <ul class="catalog-nav-list">
+            <ul class="catalog-nav">
               <li>
                 <a href="catalog.html">Каталог товаров</a>
-                <ul class="catalog-nav-list-sub-menu">
+                <ul class="catalog-nav-sub-menu">
                   <li><a href="#">Виртуальная реальность</a></li>
                   <li><a href="#">Фитнес-браслеты</a></li>
                   <li><a href="#">Квадрокоптеры</a></li>
@@ -28,29 +27,25 @@
                 </ul>
               </li>
             </ul>
-          </nav>
-      </div>
+      </nav>
       <!--Start right side of header -->
-			<div class="r-side-header">
-        <nav class="user-nav">
-  				<ul class="user-block">
-            <li class="login-link"><a href="#">Войти</a></li>
-            <li class="compare"><a href="#">Сравнить</a></li>
-            <li class="cart"><a href="#">Корзина</a></li>
-          </ul>
-        </nav>
-        <nav class="site-nav">
-          <ul class="site-navigation">
-            <li><a href="delivery.html">Доставка</a></li>
-            <li><a href="warranty.html">Гарантия</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="right-side-header">
+        <ul class="user-block">
+          <li class="user-link"><a href="#">Валентин Петухов</a></li>
+          <li class="exit-link"><a href="#">Выйти</a></li>
+          <li class="compare"><a href="#">Сравнить</a></li>
+          <li class="cart"><a href="#">Корзина</a></li>
+        </ul>
+        <ul class="site-nav">
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="warranty.html">Гарантия</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- End of header -->
 
-		<main class="container">
+    <main class="container">
       <h1 class="visually-hidden">Интернет-магазин портативных устройств Device</h1>
       <!-- Start of promo-slider -->
       <section class="slider">
@@ -63,19 +58,17 @@
         <input type="radio" id="slide-3" name="slider">
 
           <section class="slider-inner-photo slide-1">
-            <h3 class="visually-hidden">Слайд 1</h3>
             <div class="slider-slides">
               <img class="slider-pic" src="img/device-1.png" alt="Фото селфи-палки">
             </div>
 
             <div class="slider-info">
               <span class="number-slide">01</span>
-              <b class="slide-header">
-                Делай селфи,<br>
-                как Бен Стиллер!</b>
+              <h3 class="slide-header">Делай селфи,как Бен Стиллер!</h3>
               <p class="slide-desc">
                 Самая длинная палка для селфи доступна в нашем магазине.
-                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p>
               <a class="slide-more" href="#">Подробнее</a>
 
               <table class="slide-features">
@@ -94,19 +87,17 @@
           </section>
 
           <section class="slider-inner-photo slide-2">
-            <h3 class="visually-hidden">Слайд 2</h3>
             <div class="slider-slides">
               <img class="slider-pic" src="img/device-2.png" alt="Фото фитнесс-браслета">
             </div>
 
             <div class="slider-info">
               <span class="number-slide">02</span>
-              <b class="slide-header">
-                Худеем
-                правильно!</b>
+              <h3 class="slide-header">Худеем правильно!</h3>
               <p class="slide-desc">
                 Мотивирующие фитнесс-браслеты помогут найти в себе силы
-                не пропускать занятия и соблюдать диету.</p>
+                не пропускать занятия и соблюдать диету.
+              </p>
               <a class="slide-more" href="#">Подробнее</a>
 
               <table class="slide-features">
@@ -125,19 +116,17 @@
           </section>
 
           <section class="slider-inner-photo slide-3">
-            <h3 class="visually-hidden">Слайд 3</h3>
             <div class="slider-slide">
               <img class="slider-pic" src="img/device-3.png" alt="Фото квадрокоптера">
             </div>
 
             <div class="slider-info">
               <span class="number-slide">03</span>
-              <b class="slide-header">
-                Порхает как бабочка,
-                жалит как пчела!</b>
+              <h3 class="slide-header">Порхает как бабочка, жалит как пчела!</h3>
               <p class="slide-desc">
                 Этот обычный, на первый взгляд, квадрокоптер оснащен
-                мощным лазером, замаскированым под стандартную камеру.</p>
+                мощным лазером, замаскированым под стандартную камеру.
+              </p>
               <a class="slide-more" href="#">Подробнее</a>
 
               <table class="slide-features">
@@ -164,51 +153,40 @@
       <!-- End of promo-slider -->
 
       <!-- Start of popular goods -->
-			<section class="popular">
-				<h2 class="visually-hidden">Популярные товары</h2>
-				<ul class="popular-list">
-					<li class="popular-item">
-						<a class="popular-link" href="#">
-							<img src="img/popular-1.png" alt="popular-1">Виртуальная реальность
-						</a>
-					</li>
-					<li class="popular-item">
-						<a class="popular-link" href="#">
-							<img src="img/popular-2.png" alt="popular-2">Моноподы для селфи
-						</a>
-					</li>
-					<li class="popular-item">
-						<a class="popular-link" href="#">
-							<img src="img/popular-3.png" alt="popular-3">Экшн-камеры
-						</a>
-					</li>
-					<li class="popular-item">
-						<a class="popular-link" href="#">
-							<img src="img/popular-4.png" alt="popular-4">Фитнесс браслеты
-						</a>
-					</li>
-					<li class="popular-item">
-						<a class="popular-link" href="#">
-							<img src="img/popular-5.png" alt="popular-5">Умные часы
-						</a>
-					</li>
-					<li class="popular-item">
-						<a class="popular-link" href="#">
-							<img src="img/popular-6.png" alt="popular-6">Квадрокоптеры
-						</a>
-					</li>
-				</ul>
+      <section class="popular">
+        <h2 class="visually-hidden">Популярные товары</h2>
+          <figure class="popular-item">
+            <img src="img/popular-1.png" alt="popular-1">
+            <figcaption><a class="popular-link" href="#">Виртуальная реальность</a></figcaption>
+          </figure>
+          <figure class="popular-item">
+              <img src="img/popular-2.png" alt="popular-2">
+              <figcaption><a class="popular-link" href="#">Моноподы для селфи</a></figcaption>
+          </figure>
+          <figure class="popular-item">
+            <img src="img/popular-3.png" alt="popular-3">
+            <figcaption><a class="popular-link" href="#">Экшн-камеры</a></figcaption>
+          </figure>
+          <figure class="popular-item">
+            <img src="img/popular-4.png" alt="popular-4">
+            <figcaption><a class="popular-link" href="#">Фитнесс браслеты</a></figcaption>
+          </figure>
+          <figure class="popular-item">
+            <img src="img/popular-5.png" alt="popular-5">
+            <figcaption><a class="popular-link" href="#">Умные часы</a></figcaption>
+          </figure>
+          <figure class="popular-item">
+            <img src="img/popular-6.png" alt="popular-6">
+            <figcaption><a class="popular-link" href="#">Квадрокоптеры</a></figcaption>
+          </figure>
 			</section>
       <!-- End of popular goods -->
 
       <!-- Start of services slider -->
       <section class="services-slider">
         <h2 class="visually-hidden">Наши сервисы</h2>
-          <label for="delivery-slide"></label>
           <input type="radio" name="services" id="delivery-slide" checked>
-          <label for="warranty-slide"></label>
           <input type="radio" name="services" id="warranty-slide">
-          <label for="credit-slide"></label>
           <input type="radio" name="services" id="credit-slide">
 
         <div class="slide-delivery">
