@@ -1,3 +1,47 @@
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('../fonts/web/opensanslight.woff') format('woff'),
+         url('../fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}   
 
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('../fonts/web/opensans.woff') format('woff'),
+         url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-/*# sourceMappingURL=style.css.map */
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url('../fonts/web/gilroyextrabold.woff') format('woff'),
+         url('../fonts/Gilroyextrabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroylight';
+    src: url('../fonts/web/gilroylight.woff') format('woff'),
+         url('../fonts/Gilroylight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'OpenSans-Light', OpenSans, sans-serif;
+    font-size: 15px;
+    color: #464646;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+.slide-header, .info-header {
+    font-family: 'Gilroy-ExtraBold', Gilroy;
+    font-size: 47px;
+    color: #000000;
+    line-height: 56px;
+    font-weight: 800;
+}
