@@ -1,3 +1,4 @@
+/*
 @font-face {
     font-family: 'OpenSans-Light';
     src: url('../fonts/web/opensanslight.woff') format('woff'),
@@ -29,6 +30,7 @@
     font-weight: normal;
     font-style: normal;
 }
+*/
 
 body {
     font-family: 'OpenSans-Light', OpenSans, sans-serif;
