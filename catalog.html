@@ -12,7 +12,10 @@
   <header class="main-header">
     <!--Start left side of header -->
     <nav class="left-side-header">
-      <a class="main-header-logo" href="index.html">Device</a>
+      <a class="main-header-logo">
+        <!-- не знаю, нужен ли там логотип картинкой, в барбершопе сделали, я на всякий случай повторила-->
+        <img src="img/main-logo.png" width="164" height="36" alt="Логотип интернет-магазина портативных устройств Device">
+      </a>
       <form class="header-search" method="get" action="#">
         <input type="search" name="search" placeholder="Поиск по сайту">
         <button class="header-search-btn" type="submit">Найти</button>
@@ -119,8 +122,11 @@
       <h2 class="visually-hidden">Список товаров каталога</h2>
       <article class="catalog-item">
         <figure>
-          <img src="img/product-1.png" width="128" height="294" alt="Любительская селфи-палка">
-          <figcaption><a href="#">Любительская селфи-палка</a><span class="catalog-item-price">500 руб.</span></figcaption>
+          <!--я так поняла по лекции, что тут картинка и подпись ведут на одну страницу-->
+          <a href="catalog-item.html">
+            <img src="img/product-1.png" width="128" height="294" alt="Любительская селфи-палка">
+            <figcaption><a href="#">Любительская селфи-палка</a><span class="catalog-item-price">500 руб.</span></figcaption>
+          </a>
         </figure>
         <div class="catalog-item-hover">
           <button type="button">В корзину</button>
@@ -129,8 +135,10 @@
       </article>
       <article class="catalog-item">
         <figure>
-          <img src="img/product-2.png" width="52" height="235" alt="Любительская селфи-палка">
-          <figcaption><a href="#">Профессиональная селфи-палка</a><span class="catalog-item-price">1 500 руб.</span></figcaption>
+          <a href="catalog-item.html">
+            <img src="img/product-2.png" width="52" height="235" alt="Любительская селфи-палка">
+            <figcaption><a href="#">Профессиональная селфи-палка</a><span class="catalog-item-price">1 500 руб.</span></figcaption>
+          </a>
         </figure>
         <div class="catalog-item-hover">
           <button type="button">В корзину</button>
@@ -139,8 +147,10 @@
       </article>
       <article class="catalog-item">
         <figure>
-          <img src="img/product-3.png" width="79" height="243" alt="Любительская селфи-палка">
-          <figcaption><a href="#">Непотопляемая селфи-палка</a><span class="catalog-item-price">2 500 руб.</span></figcaption>
+          <a href="catalog-item.html">
+            <img src="img/product-3.png" width="79" height="243" alt="Любительская селфи-палка">
+            <figcaption><a href="#">Непотопляемая селфи-палка</a><span class="catalog-item-price">2 500 руб.</span></figcaption>
+          </a>
         </figure>
         <div class="catalog-item-hover">
           <button type="button">В корзину</button>
@@ -149,8 +159,10 @@
       </article>
       <article class="catalog-item">
         <figure>
-          <img src="img/product-4.png" width="240" height="113" alt="Любительская селфи-палка">
-          <figcaption><a href="#">Селфи-палка "Следуй за мной"</a><span class="catalog-item-price">4 900 руб.</span></figcaption>
+          <a href="catalog-item.html">
+            <img src="img/product-4.png" width="240" height="113" alt="Любительская селфи-палка">
+            <figcaption><a href="#">Селфи-палка "Следуй за мной"</a><span class="catalog-item-price">4 900 руб.</span></figcaption>
+          </a>
         </figure>
         <div class="catalog-item-hover">
           <button type="button">В корзину</button>

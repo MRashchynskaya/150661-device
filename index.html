@@ -12,7 +12,10 @@
   <header class="main-header">
     <!--Start left side of header -->
     <nav class="left-side-header">
-      <a class="main-header-logo">Device</a>
+      <a class="main-header-logo">
+        <!-- не знаю, нужен ли там логотип картинкой, в барбершопе сделали, я на всякий случай повторила-->
+        <img src="img/main-logo.png" width="164" height="36" alt="Логотип интернет-магазина портативных устройств Device">
+      </a>
       <form class="header-search" method="get" action="#">
         <input type="search" name="search" placeholder="Поиск по сайту">
         <button class="header-search-btn" type="submit">Найти</button>
@@ -34,7 +37,9 @@
     <!--Start right side of header -->
     <nav class="right-side-header">
       <ul class="user-block">
-        <li class="login"><a href="#">Войти</a></li>
+        <!--не уверена, что тут у нас должна быть ссылка, вроде бы нигде не говорится, что предусмотрена
+          отдельная страница для в входа, тогда тут нужен баттон -->
+        <li class="login"><a href="login.html">Войти</a></li>
         <li class="compare"><a href="#">Сравнить</a></li>
         <li class="cart"><a href="#">Корзина</a></li>
       </ul>
@@ -304,7 +309,7 @@
         <textarea name="your-text" id="your-text" rows="4" placeholder="В свободной форме"></textarea>
       </p>
       <button class="submit-btn" type="submit">Отправить</button>
-      <button class="close-btn" type="button"></button>
+      <button class="close-btn" type="button">Закрыть</button>
     </form>
   </section>
   <!-- End of write us form -->
