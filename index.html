@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" type="text/css" href="https://sdnjis.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -13,7 +15,6 @@
     <!--Start left side of header -->
     <nav class="left-side-header">
       <a class="main-header-logo">
-        <!-- не знаю, нужен ли там логотип картинкой, в барбершопе сделали, я на всякий случай повторила-->
         <img src="img/main-logo.png" width="164" height="36" alt="Логотип интернет-магазина портативных устройств Device">
       </a>
       <form class="header-search" method="get" action="#">
@@ -37,8 +38,6 @@
     <!--Start right side of header -->
     <nav class="right-side-header">
       <ul class="user-block">
-        <!--не уверена, что тут у нас должна быть ссылка, вроде бы нигде не говорится, что предусмотрена
-          отдельная страница для в входа, тогда тут нужен баттон -->
         <li class="login"><a href="#">Войти</a></li>
         <li class="compare"><a href="#">Сравнить</a></li>
         <li class="cart"><a href="#">Корзина</a></li>
@@ -65,7 +64,7 @@
         </div>
         <div class="slider-info">
           <span class="number-slide">01</span>
-          <h3 class="slide-header">Делай селфи,как Бен Стиллер!</h3>
+          <h3 class="slide-header">Делай селфи, как Бен Стиллер!</h3>
           <p class="slide-desc">
             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
@@ -200,6 +199,7 @@
         <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
       </div>
       <div class="services-slider-controls">
+        <!-- наверное, чтобы сделать тут ховеры и прочее, нужно вложить в лэйблы ссылки?-->
         <label class="btn" for="delivery-slide">Доставка</label>
         <label class="btn" for="warranty-slide">Гарантия</label>
         <label class="btn" for="credit-slide">Кредит</label>
@@ -265,7 +265,9 @@
   <!-- Start of footer -->
   <footer class="main-footer">
     <div class="footer-left">
-      <a class="footer-logo">Device</a>
+      <a class="footer-logo">
+        <img src="img/footer-logo.png" width="163" height="36" alt="Логотип интернет-магазина портативных устройств Device">
+      </a>
       <p class="address">г. Москва, ул. Строителей, 15</p>
     </div>
     <div class="footer-center">
