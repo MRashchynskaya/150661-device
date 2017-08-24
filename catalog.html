@@ -63,8 +63,19 @@
       <h2 class="filters-title">Фильтр</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
+          <!-- Тут я не совсем поняла как правильно сделать. Может как-то так. -->
           <legend>Стоимость</legend>
-          <input type="range" name="price" min="1" max="500" step="1">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="selected-price">
+            <span>от 0</span>
+            <span>до 5000</span>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
@@ -109,16 +120,11 @@
     </section>
     <section class="sort-items">
       <h2 class="sort-items-title">Сортировка</h2>
-      <label class="sort-current" for="sort-price">По цене</label>
-      <input type="radio" id="sort-price" name="sort-price" checked>
-      <label for="sort-type">По типу</label>
-      <input type="radio" id="sort-type" name="sort-type">
-      <label for="sort-popular">По популярности</label>
-      <input type="radio" id="sort-popular" name="sort-popular">
-      <label for="sort-from-less-to-more"></label>
-      <input type="radio" id="sort-from-less-to-more" name="less-to-more">
-      <label for="sort-from-more-to-less"></label>
-      <input type="radio" id="sort-from-more-to-less" name="more-to-less">
+      <button class="sort-current" type="button" checked>По цене</button>
+      <button class="sort" type="button">По типу</button>
+      <button class="sort" type="button">По популярности</button>
+      <button class="sort-up" type="button">Вверх</button>
+      <button class="sort-down" type="button">Вниз</button>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров каталога</h2>
