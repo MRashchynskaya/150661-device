@@ -119,20 +119,19 @@ a {
   letter-spacing: 0.1px;
 }
 
-.popular-item {
-  font-family: 'Gilroy-ExtraBold', 'Helvetica', sans-serif;
-  font-size: 18px;
-  /*это растояние расчитывала по формуле из этой статьи https://blog.sibirix.ru/2014/02/06/letter-spacing/ */
-  letter-spacing: 0.2px;
-  color: #000;
-}
-
 
 /*Раздел "популярное" c твоей помозь стало похоже, но все равно не идеально*/
 
 .popular-item {
   display: flex;
   flex-direction: row;
+
+  font-family: 'Gilroy-ExtraBold', 'Helvetica', sans-serif;
+  font-size: 18px;
+  /*это растояние расчитывала по формуле из этой статьи https://blog.sibirix.ru/2014/02/06/letter-spacing/ */
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  color: #000;
 }
 
 .pop {
@@ -150,7 +149,7 @@ a {
   height: 160px;
   top: 0;
   left: 0;
-  background: url("img/popular-1.svg") no-repeat 50% 50%;
+  background: url("../img/popular-1.svg") no-repeat 50% 50%;
   background-size: 97px 55px;
   z-index: 10;
 }
@@ -182,8 +181,56 @@ a {
   height: 160px;
   top: 0;
   left: 0;
-  background: url("img/popular-2.svg") no-repeat 50% 50%;
+  background: url("../img/popular-2.svg") no-repeat 50% 100%;
   background-size: 86px 117px;
+  z-index: 10;
+}
+
+.pop3::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
+  background: url("../img/popular-3.svg") no-repeat 50% 50%;
+  background-size: 71px 87px;
+  z-index: 10;
+}
+
+.pop4::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
+  background: url("../img/popular-4.svg") no-repeat 50% 50%;
+  background-size: 107px 65px;
+  z-index: 10;
+}
+
+.pop5::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
+  background: url("../img/popular-5.svg") no-repeat 50% 50%;
+  background-size: 56px 98px;
+  z-index: 10;
+}
+
+.pop6::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 0;
+  background: url("../img/popular-6.svg") no-repeat 50% 50%;
+  background-size: 132px 69px;
   z-index: 10;
 }
 
