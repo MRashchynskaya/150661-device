@@ -1,6 +1,5 @@
 @font-face {
   font-family: 'OpenSans-Light';
-
   src: url('../fonts/web/opensanslight.woff2') format('woff2'),
   url('../fonts/web/opensanslight.woff') format('woff'),
   url('../fonts/OpenSans-Light.ttf') format('truetype');
@@ -60,6 +59,7 @@ a {
   color: #000000;
 }
 
+
 .main-header {
   background-color: #f7e296;
 }
@@ -79,6 +79,16 @@ a {
   list-style: none;
 }
 
+.main-header .header-logo:hover,
+.main-header a:hover {
+  opacity: 0.6;
+}
+
+.main-header .header-logo:active,
+.main-header a:active {
+  opacity: 0.3;
+}
+
 .catalog-nav-sub-menu {
   font-family: 'OpenSans-Light', 'Helvetica', sans-serif;
   font-size: 15px;
@@ -87,6 +97,7 @@ a {
   text-transform: initial;
   letter-spacing: initial;
 }
+
 
 .slide-more {
   text-transform: uppercase;
@@ -120,7 +131,7 @@ a {
 }
 
 
-/*Раздел "популярное" c твоей помозь стало похоже, но все равно не идеально*/
+/*Раздел "популярное" c твоей помозь стал похоже на макет, но все равно не идеально*/
 
 .popular-item {
   display: flex;
@@ -235,8 +246,6 @@ a {
 }
 
 
-/*конец раздела популярное*/
-
 .services-slider {
   background-color: #e5e5e5;
 }
@@ -252,6 +261,7 @@ a {
   color: #000000;
   list-style-type: circle;
 }
+
 
 .main-footer,
 .main-footer a {
@@ -279,12 +289,24 @@ a {
   text-transform: uppercase;
 }
 
+.main-footer .footer-logo:hover,
+.main-footer .copyright-logo:hover {
+  opacity: 0.8;
+}
+
+.main-footer .footer-logo:active,
+.main-footer .copyright-logo:active {
+  opacity: 0.6;
+}
+
+
 .write-us label {
   font-family: 'Gilroy-ExtraBold', 'Helvetica', sans-serif;
   font-size: 18px;
   letter-spacing: 0.2px;
   color: #000;
 }
+
 
 .write-us input,
 .write-us textarea {
