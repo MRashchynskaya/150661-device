@@ -62,7 +62,6 @@
       <h2 class="filters-title">Фильтр</h2>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
-          <!-- Тут я не совсем поняла как правильно сделать. Может как-то так. -->
           <legend>Стоимость</legend>
           <div class="range-controls">
             <div class="scale">
@@ -84,7 +83,7 @@
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
             </li>
             <li class="filter-option">
-              <label class="input-title" for="white"></label>
+              <label class="input-title" for="white">Белый</label>
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
             </li>
             <li class="filter-option">
@@ -96,7 +95,7 @@
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
             </li>
             <li class="filter-option">
-              <label class="input-title" for="pink"></label>
+              <label class="input-title" for="pink">Розовый</label>
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink">
             </li>
           </ul>
@@ -169,9 +168,9 @@
       </article>
       <ul class="pagination-list">
         <li class="pagination-item"><a href="#">Назад</a></li>
-        <li class="pagination-item pagination-item-current">1</li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item">1</li>
+        <li class="pagination-item pagination-item-active"><a href="#">2</a></li>
+        <li class="pagination-item pagination-item-active"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">Вперед</a></li>
       </ul>
     </section>
