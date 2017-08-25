@@ -1,36 +1,36 @@
 @font-face {
-  font-family: 'OpenSans-Light';
+  font-family: 'OpenSans';
   src: url('../fonts/web/opensanslight.woff2') format('woff2'),
   url('../fonts/web/opensanslight.woff') format('woff'),
   url('../fonts/OpenSans-Light.ttf') format('truetype');
-  font-weight: 300;
+  font-weight: lighter;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'OpenSans-Regular';
+  font-family: 'OpenSans';
   src: url('../fonts/web/opensans.woff2') format('woff2'),
   url('../fonts/web/opensans.woff') format('woff'),
   url('../fonts/OpenSans-Regular.ttf') format('truetype');
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroy-ExtraBold';
+  font-family: 'Gilroy';
   src: url('../fonts/web/gilroyextrabold.woff2') format('woff2'),
   url('../fonts/web/gilroyextrabold.woff') format('woff'),
   url('../fonts/Gilroyextrabold.ttf') format('truetype');
-  font-weight: 800;
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gilroylight';
+  font-family: 'Gilroy';
   src: url('../fonts/web/gilroylight.woff2') format('woff2'),
   url('../fonts/web/gilroylight.woff') format('woff'),
   url('../fonts/Gilroylight.ttf') format('truetype');
-  font-weight: 300;
+  font-weight: lighter;
   font-style: normal;
 }
 
@@ -38,20 +38,22 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'OpenSans-Light', 'Helvetica', sans-serif;
+  font-family: 'OpenSans', 'Helvetica', sans-serif;
+  font-weight: lighter;
   font-size: 15px;
   color: #464646;
   line-height: 30px;
-  letter-spacing: 0.2px;
+  /* letter-spacing: 0.2px; */
 }
 
 .slide-header,
 .info-header {
-  font-family: 'Gilroy-ExtraBold', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-weight: bold;
   font-size: 47px;
   color: #000000;
   line-height: 56px;
-  letter-spacing: 0.5px;
+  /*letter-spacing: 0.5px;*/
 }
 
 a {
@@ -67,9 +69,10 @@ a {
 .catalog-nav,
 .site-nav {
   text-transform: uppercase;
-  font-family: 'Gilroy-ExtraBold', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-weight: bold;
   font-size: 18px;
-  letter-spacing: 3.6px;
+  /*letter-spacing: 3.6px;*/
 }
 
 .catalog-nav,
@@ -90,20 +93,22 @@ a {
 }
 
 .catalog-nav-sub-menu {
-  font-family: 'OpenSans-Light', 'Helvetica', sans-serif;
+  font-family: 'OpenSans', 'Helvetica', sans-serif;
+  font-weight: lighter;
   font-size: 15px;
   line-height: 36px;
   background-color: inherit;
-  text-transform: initial;
-  letter-spacing: initial;
+  text-transform: none;
+  /*letter-spacing: initial;*/
 }
 
 
 .slide-more {
   text-transform: uppercase;
-  font-family: 'Gilroy-ExtraBold', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-weight: bold;
   font-size: 18px;
-  letter-spacing: 3.6px;
+  /*letter-spacing: 3.6px;*/
   background-color: #f0c52e;
   text-align: center;
 }
@@ -111,36 +116,38 @@ a {
 .number-slide {
   width: 166px;
   height: 131px;
-  font-family: 'Gilroy-ExtraBold', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-weight: bold;
   font-size: 179.2px;
-  letter-spacing: 1.8px;
+  /*letter-spacing: 1.8px;*/
   color: #ffffff;
   background-color: #f7e296;
 }
 
 .slide-features-value {
-  font-family: 'Gilroylight', 'Helvetica', sans-serif;
+  font-family: 'OpenSans', 'Helvetica', sans-serif;
+  font-weight: lighter;
   font-size: 36px;
-  letter-spacing: 0.4px;
+  /*letter-spacing: 0.4px;*/
 }
 
 .slide-features-type {
   font-size: 13px;
   line-height: 20px;
-  letter-spacing: 0.1px;
+  /*letter-spacing: 0.1px;*/
 }
 
-
-/*Раздел "популярное" c твоей помозь стал похоже на макет, но все равно не идеально*/
 
 .popular-item {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
-  font-family: 'Gilroy-ExtraBold', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-weight: bold;
   font-size: 18px;
   /*это растояние расчитывала по формуле из этой статьи https://blog.sibirix.ru/2014/02/06/letter-spacing/ */
-  letter-spacing: 0.2px;
+  /*letter-spacing: 0.2px;*/
   line-height: 20px;
   color: #000;
 }
@@ -255,7 +262,8 @@ a {
 }
 
 .about-us li {
-  font-family: 'Gilroy-ExtraBold', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-weight: bold;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
@@ -266,7 +274,8 @@ a {
 .main-footer,
 .main-footer a {
   background-color: #464646;
-  font-family: 'OpenSans-Light', 'Helvetica', sans-serif;
+  font-family: 'OpenSans', 'Helvetica', sans-serif;
+  font-weight: lighter;
   font-size: 15px;
   line-height: 30px;
   color: #ffffff;
@@ -278,14 +287,15 @@ a {
 
 .user-block {
   line-height: 36px;
-  letter-spacing: 0.2px;
+  /*letter-spacing: 0.2px;*/
 }
 
 .footer-services {
-  font-family: 'Gilroy-ExtraBold', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-weight: bold;
   font-size: 18px;
   font-weight: 800;
-  letter-spacing: 3.6px;
+  /*letter-spacing: 3.6px;*/
   text-transform: uppercase;
 }
 
@@ -301,7 +311,8 @@ a {
 
 
 .write-us label {
-  font-family: 'Gilroy-ExtraBold', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-weight: bold;
   font-size: 18px;
   letter-spacing: 0.2px;
   color: #000;
