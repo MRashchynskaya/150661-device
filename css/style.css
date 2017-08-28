@@ -478,14 +478,25 @@ span.catalog-item {
 /*сетка*/
 
 body {
-  max-width: 1160px;
+  
+}
+
+.container {
+  width: 1200px;
+  box-sizing: border-box;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .main-header {
-  display: flex;
   margin-bottom: 50px;
-  padding: 40px 60px;
+  margin-top: 40px;
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
   margin-top: 40px;
 }
 
@@ -496,7 +507,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 600px;
+  width: 450px;
 }
 
 .right-side-header {
@@ -703,7 +714,6 @@ table {
   display: flex;
   justify-content: space-between;
 }
-
 
 .footer-left,
 .footer-center,
