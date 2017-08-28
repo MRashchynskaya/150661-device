@@ -23,7 +23,15 @@ body {
   font-size: 15px;
   color: #464646;
   line-height: 30px;
-  /* letter-spacing: 0.2px; */
+  letter-spacing: 0.2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .slide-header,
@@ -34,7 +42,7 @@ body {
   font-size: 47px;
   color: #000000;
   line-height: 50px;
-  /*letter-spacing: 0.5px;*/
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -52,7 +60,7 @@ a {
   font-family: 'Gilroy', 'Helvetica', sans-serif;
   font-weight: bold;
   font-size: 18px;
-  /*letter-spacing: 3.6px;*/
+  letter-spacing: 3.6px;
 }
 
 .catalog-nav,
@@ -79,9 +87,8 @@ a {
   line-height: 36px;
   background-color: inherit;
   text-transform: none;
-  /*letter-spacing: initial;*/
+  letter-spacing: initial;
 }
-
 
 /*ссылки и кнопки не знаю как стизизовать по стайл гайду, нужна помощь*/
 
@@ -90,7 +97,7 @@ a {
   font-family: 'Gilroy', 'Helvetica', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  /*letter-spacing: 3.6px;*/
+  letter-spacing: 3.6px;
   background-color: #f0c52e;
   background-size: 160px 8px;
   text-align: center;
@@ -106,15 +113,13 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.submit-btn button {}
-
 .number-slide {
   width: 166px;
   height: 131px;
   font-family: 'Gilroy', 'Helvetica', sans-serif;
   font-weight: 800;
   font-size: 179.2px;
-  /*letter-spacing: 1.8px;*/
+  letter-spacing: 1.8px;
   color: #ffffff;
   background-color: #f7e296;
 }
@@ -124,26 +129,21 @@ a {
   font-weight: 300;
   font-size: 36px;
   color: #000000;
-  /*letter-spacing: 0.4px;*/
+  letter-spacing: 0.4px;
 }
 
 .slide-features-type {
   font-size: 13px;
   line-height: 20px;
   color: #000000;
-  /*letter-spacing: 0.1px;*/
+  letter-spacing: 0.1px;
 }
 
 .popular-item {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
   font-family: 'Gilroy', 'Helvetica', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  /*это растояние расчитывала по формуле из этой статьи https://blog.sibirix.ru/2014/02/06/letter-spacing/ */
-  /*letter-spacing: 0.2px;*/
+  letter-spacing: 0.2px;
   line-height: 20px;
   color: #000;
 }
@@ -266,7 +266,6 @@ a {
   list-style-type: circle;
 }
 
-
 /* Страница каталога*/
 
 .breadcrumbs {
@@ -290,7 +289,6 @@ a {
 .breadcrumbs a:active {
   opacity: 0.3;
 }
-
 
 /* Фильтры каталога */
 
@@ -323,7 +321,6 @@ a {
   color: #000000;
 }
 
-
 /*верхний блок сортировки */
 
 .sort-items {
@@ -340,7 +337,6 @@ a {
   text-transform: uppercase;
   color: #000000;
 }
-
 
 /*карточки товаров*/
 
@@ -363,7 +359,6 @@ span.catalog-item {
   line-height: 18px;
 }
 
-
 /*пагинация*/
 
 .pagination-list {
@@ -383,7 +378,6 @@ span.catalog-item {
   color: #000000;
 }
 
-
 /* Подвал */
 
 .main-footer,
@@ -402,14 +396,14 @@ span.catalog-item {
 
 .user-block {
   line-height: 36px;
-  /*letter-spacing: 0.2px;*/
+  letter-spacing: 0.2px;
 }
 
 .footer-services {
   font-family: 'Gilroy', 'Helvetica', sans-serif;
   font-weight: 800;
   font-size: 18px;
-  /*letter-spacing: 3.6px;*/
+  letter-spacing: 3.6px;
   text-transform: uppercase;
 }
 
@@ -436,7 +430,7 @@ span.catalog-item {
   font-weight: 800;
   font-size: 18px;
   line-height: 18px;
-  /*letter-spacing: 0.2px;*/
+  letter-spacing: 0.2px;
   color: #000;
   display: block;
   margin-bottom: 13px;
@@ -478,4 +472,302 @@ span.catalog-item {
   background-color: #f6dada;
   border: none;
   color: #464646;
+}
+
+
+/*сетка*/
+
+body {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.main-header {
+  display: flex;
+  margin-bottom: 50px;
+  padding: 40px 60px;
+  margin-top: 40px;
+}
+
+.left-side-header {
+  /* Временно для сетки */
+  min-height: 170px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.right-side-header {
+  /* Временно для сетки */
+  min-height: 170px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header-logo {
+  width: 164px;
+  height: 60px;
+
+  margin-bottom: 20px;
+}
+
+.header-search {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 36px;
+  display: flex;
+}
+
+.catalog-nav {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 36px;
+}
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-block {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 36px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-navigation-li {
+  list-style: none;
+
+  /* Временно для сетки */
+  min-width: 110px;
+}
+
+.user-navigation-li:first-child {
+  margin-right: 155px;
+}
+
+.site-navigation-li:last-child {
+  margin-left: 90px;
+}
+
+.site-navigation-li {
+  min-width: 130px;
+  margin-right: 10px;
+}
+
+.slider-inner-photo {
+  display: flex;
+  min-height: 500px;
+}
+
+.slider-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px; 
+  width: 500px;
+}
+
+.slider {
+  margin-bottom: 70px;
+  padding: 0px 60px;
+}
+
+.number-slide {
+  align-self: flex-end;
+}
+
+.slider-slides {
+  width: 600px;
+}
+
+table {
+  min-height: 100px;
+}
+
+.popular {
+  min-height: 260px;
+  margin-bottom: 70px;
+}
+
+.popular-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-slider {
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.services-slider-controls {
+  min-width: 185px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.btn {
+  min-height: 40px;
+  margin-bottom: 25px;
+}
+
+.slide-delivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brands {
+  min-height: 230px;
+  margin-bottom: 50px;
+}
+
+.brands-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.brands-item {
+  min-height: 80px;
+  min-width: 265px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+
+.about-us,
+.contacts {
+  min-height: 580px;
+}
+
+.about-us {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts {
+  max-width: 590px;
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-footer {
+  padding: 60px 0px;
+}
+
+.main-footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer-left,
+.footer-center,
+.footer-right {
+  min-height: 200px;
+}
+
+.footer-left {
+  margin: 0;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-center {
+  margin: 0;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.footer-services {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-services-item {
+  width: 140px;
+}
+
+.footer-social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.footer-right {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-block {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-block-item {
+  width: 100px;
+  margin-right: 15px;
+}
+
+.tel,
+.copyright-logo {
+  align-self: flex-end;
 }
