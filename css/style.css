@@ -1,36 +1,16 @@
 @font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/web/opensanslight.woff2') format('woff2'),
-  url('../fonts/web/opensanslight.woff') format('woff'),
-  url('../fonts/OpenSans-Light.ttf') format('truetype');
-  font-weight: lighter;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'OpenSans';
-  src: url('../fonts/web/opensans.woff2') format('woff2'),
-  url('../fonts/web/opensans.woff') format('woff'),
-  url('../fonts/OpenSans-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Gilroy';
+  src: url('fonts/gilroylight.woff2') format('woff2'),
+  url('fonts/gilroylight.woff') format('woff');
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../fonts/web/gilroyextrabold.woff2') format('woff2'),
-  url('../fonts/web/gilroyextrabold.woff') format('woff'),
-  url('../fonts/Gilroyextrabold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('../fonts/web/gilroylight.woff2') format('woff2'),
-  url('../fonts/web/gilroylight.woff') format('woff'),
-  url('../fonts/Gilroylight.ttf') format('truetype');
-  font-weight: lighter;
+  src: url('fonts/gilroyextrabold.woff2') format('woff2'),
+  url('fonts/gilroyextrabold.woff') format('woff');
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -39,7 +19,7 @@ body {
   padding: 0;
 
   font-family: 'OpenSans', 'Helvetica', sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 15px;
   color: #464646;
   line-height: 30px;
@@ -50,7 +30,7 @@ body {
 .info-header,
 .page-title {
   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 47px;
   color: #000000;
   line-height: 50px;
@@ -60,11 +40,6 @@ body {
 a {
   text-decoration: none;
   color: #000000;
-}
-
-*::before,
-*::after {
-  content: "";
 }
 
 .main-header {
@@ -99,7 +74,7 @@ a {
 
 .catalog-nav-sub-menu {
   font-family: 'OpenSans', 'Helvetica', sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 15px;
   line-height: 36px;
   background-color: inherit;
@@ -108,12 +83,12 @@ a {
 }
 
 
-/*ссылки и кнопки за знаю как стизизовать по стайл гайду*/
+/*ссылки и кнопки не знаю как стизизовать по стайл гайду, нужна помощь*/
 
 .slide-more a {
   text-transform: uppercase;
   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 18px;
   /*letter-spacing: 3.6px;*/
   background-color: #f0c52e;
@@ -137,7 +112,7 @@ a {
   width: 166px;
   height: 131px;
   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 179.2px;
   /*letter-spacing: 1.8px;*/
   color: #ffffff;
@@ -146,7 +121,7 @@ a {
 
 .slide-features-value {
   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 36px;
   color: #000000;
   /*letter-spacing: 0.4px;*/
@@ -165,7 +140,7 @@ a {
   justify-content: space-between;
 
   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 18px;
   /*это растояние расчитывала по формуле из этой статьи https://blog.sibirix.ru/2014/02/06/letter-spacing/ */
   /*letter-spacing: 0.2px;*/
@@ -284,7 +259,7 @@ a {
 
 .about-us li {
   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
@@ -301,7 +276,7 @@ a {
 .breadcrumbs li,
 .breadcrumbs a {
   font-family: 'OpenSans', 'Helvetica', sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 14px;
   line-height: 36px;
   color: rgba(0, 0, 0, 0.3);
@@ -315,7 +290,6 @@ a {
 .breadcrumbs a:active {
   opacity: 0.3;
 }
-
 
 
 /* Фильтры каталога */
@@ -334,7 +308,7 @@ a {
 
 .filter legend {
   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -343,23 +317,11 @@ a {
 .filter ul {
   list-style: none;
   font-family: 'OpenSans', 'Helvetica', sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 14px;
   line-height: 40px;
   color: #000000;
 }
-
-
-
-/*не работает таким образом*/
-
-.filter-input:hover+label,
-.filter-input:focus+label {
-  color: #000000;
-
-  opacity: 0.5;
-}
-
 
 
 /*верхний блок сортировки */
@@ -372,13 +334,12 @@ a {
 .filters-title,
 .pagination-item {
   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
 }
-
 
 
 /*карточки товаров*/
@@ -389,7 +350,7 @@ a {
 
 .catalog-item a {
   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-weight: bold;
+  font-weight: 800;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -397,11 +358,10 @@ a {
 
 span.catalog-item {
   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 16px;
   line-height: 18px;
 }
-
 
 
 /*пагинация*/
@@ -424,14 +384,13 @@ span.catalog-item {
 }
 
 
-
 /* Подвал */
 
 .main-footer,
 .main-footer a {
   background-color: #464646;
   font-family: 'OpenSans', 'Helvetica', sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 15px;
   line-height: 30px;
   color: #ffffff;
@@ -448,9 +407,8 @@ span.catalog-item {
 
 .footer-services {
   font-family: 'Gilroy', 'Helvetica', sans-serif;
-  font-weight: bold;
-  font-size: 18px;
   font-weight: 800;
+  font-size: 18px;
   /*letter-spacing: 3.6px;*/
   text-transform: uppercase;
 }
@@ -467,7 +425,7 @@ span.catalog-item {
 
 .write-us {
   font-family: 'OpenSans', 'Helvetica', sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #464646;
