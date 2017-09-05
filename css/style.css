@@ -67,6 +67,10 @@ img {
 
 /*Header*/
 
+.main-header {
+  min-width: 1160px;
+}
+
 .main-header .container {
   background-color: #f7e296;
 }
@@ -409,7 +413,10 @@ button.search-form-btn:active {
 }
 
 .services-slider {
+  width: 100%;
+  min-width: 1160px;
   min-height: 288px;
+  background-image: linear-gradient(to bottom, transparent 100px, rgba(229, 229, 229, 1) 100px);
 }
 
 .brands-list {
@@ -877,8 +884,6 @@ span.catalog-item {
 .services-slider .container {
   display: flex;
   margin-bottom: 70px;
-
-  background-image: linear-gradient(to bottom, transparent 100px, rgba(229, 229, 229, 1) 100px);
 }
 
 .services-slider-info p {
@@ -1040,12 +1045,17 @@ span.catalog-item {
 
 /*footers grid*/
 
+.main-footer {
+  width: 100%;
+  min-width: 1160px;
+
+  background-color: #464646;
+}
+
 .main-footer .container {
   display: flex;
   justify-content: space-between;
   padding: 67px 0px;
-
-  background-color: #464646;
 }
 
 .footer-right {
@@ -1088,6 +1098,7 @@ span.catalog-item {
 
 .footer-services-item {
   min-width: 120px;
+  margin-right: 30px;
 }
 
 .footer-services .footer-services-item:hover {
