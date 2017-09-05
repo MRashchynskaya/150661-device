@@ -841,6 +841,8 @@ span.catalog-item {
 
 .slider-inner-photo .container {
   display: flex;
+  justify-content: space-between;
+
   box-sizing: border-box;
   margin-bottom: 100px;
   padding: 0px 60px;
@@ -858,12 +860,11 @@ span.catalog-item {
 .number-slide {
   position: absolute;
   top: -62px;
-  left: 330px;
+  left: 285px;
 }
 
 .slider-slides {
   width: 500px;
-  margin-right: 42px;
 }
 
 .slide-features {
