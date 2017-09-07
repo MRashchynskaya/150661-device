@@ -62,67 +62,70 @@
     <div class="innet-page-title container">
       <h1 class="page-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="breadcrumb-item breadcrumbs-current">Моноподы для селфи</li>
       </ul>
     </div>
+    
+    <div class="inner-page-bg">
 
-    <div class="catalog-columns">
-
-      <div class="filter-left-wr"></div>
+    <div class="catalog-columns container">
         
       <section class="filters">
-        <div class="filter-container">
-          <h2 class="filters-title">Фильтр</h2>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
+          <h2 class="filters-title">Фильтр:</h2>
+          <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-price">
               <legend>Стоимость</legend>
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
-              </div>
-              <div class="selected-price">
-                <span>от 0</span>
-                <span>до 5000</span>
+                <div class="toggle toggle-min">
+                  <label for="min-price" tabindex="0"></label>
+                  <span>от</span>
+                  <input id="min-price" class="max-price" type="text" value="0">
+                </div>
+                <div class="toggle toggle-max">
+                  <label for="max-price" tabindex="0"></label>
+                  <span>до</span>
+                  <input id="max-price" class="max-price" type="text" value="5 000">
+                </div>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-color">
               <legend>Цвет</legend>
-              <ul>
-                <li class="filter-option">
+              <ul class="color-list">
+                <li class="filter-option-color">
                   <label class="input-title" for="black">Черный</label>
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" id="black" checked>
                 </li>
-                <li class="filter-option">
+                <li class="filter-option-color">
                   <label class="input-title" for="white">Белый</label>
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white" id="white">
                 </li>
-                <li class="filter-option">
+                <li class="filter-option-color">
                   <label class="input-title" for="blue">Синий</label>
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue" checked>
                 </li>
-                <li class="filter-option">
+                <li class="filter-option-color">
                   <label class="input-title" for="red">Красный</label>
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" id="red" checked>
                 </li>
-                <li class="filter-option">
+                <li class="filter-option-color">
                   <label class="input-title" for="pink">Розовый</label>
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink">
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-bluetooth">
               <legend>Bluetooth</legend>
-              <ul>
-                <li class="filter-option">
+              <ul class="bluetooth-list">
+                <li class="filter-option-bluetooth">
                   <label class="input-title" for="Bluetooth-yes">Есть</label>
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Bluetooth" id="Bluetooth-yes" value="yes" checked>
                 </li>
-                <li class="filter-option">
+                <li class="filter-option-bluetooth">
                   <label class="input-title" for="Bluetooth-no">Нет</label>
                   <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Bluetooth" id="Bluetooth-no" value="no">
                 </li>
@@ -130,23 +133,24 @@
             </fieldset>
             <button type="submit" class="filter-button btn"><span>Показать</span></button>
           </form>
-        </div>
       </section>
 
       <div class="catalog-column">
-        <section class="sort-items">
-          <h2 class="sort-items-title">Сортировка</h2>
-          <button class="sort-current" type="button" checked>По цене</button>
+        <section class="sort-field">
+          <h2 class="sort-items-title">Сортировка:</h2>
+          <!--<button class="sort-current" type="button" checked>По цене</button>
           <button class="sort" type="button">По типу</button>
           <button class="sort" type="button">По популярности</button>
           <button class="sort-up" type="button">Вверх</button>
-          <button class="sort-down" type="button">Вниз</button>
+          <button class="sort-down" type="button">Вниз</button> -->
         </section>
-        <section class="catalog">
+        <section class="catalog-list">
           <h2 class="visually-hidden">Список товаров каталога</h2>
           <article class="catalog-item">
             <figure>
-              <img src="img/product-1.png" width="128" height="294" alt="Любительская селфи-палка">
+              <div class="catalog-photo">
+              <img src="img/product-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              </div>
               <figcaption><a href="#">Любительская селфи-палка</a><span class="catalog-item-price">500 руб.</span></figcaption>
             </figure>
             <div class="catalog-item-hover">
@@ -156,7 +160,7 @@
           </article>
           <article class="catalog-item">
             <figure>
-              <img src="img/product-2.png" width="52" height="235" alt="Любительская селфи-палка">
+              <img src="img/product-2.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <figcaption><a href="#">Профессиональная селфи-палка</a><span class="catalog-item-price">1 500 руб.</span></figcaption>
             </figure>
             <div class="catalog-item-hover">
@@ -166,17 +170,17 @@
           </article>
           <article class="catalog-item">
             <figure>
-              <img src="img/product-3.png" width="79" height="243" alt="Любительская селфи-палка">
+              <img src="img/product-3.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <figcaption><a href="#">Непотопляемая селфи-палка</a><span class="catalog-item-price">2 500 руб.</span></figcaption>
             </figure>
             <div class="catalog-item-hover">
-              <button type="button">В корзину</button>
-              <button type="button">Добавить к сравнению</button>
+              <button class="btn" type="button"><span>В корзину</span></button>
+              <button class="btn" type="button"><span>Добавить к сравнению</span></button>
             </div>
           </article>
           <article class="catalog-item">
             <figure>
-              <img src="img/product-4.png" width="240" height="113" alt="Любительская селфи-палка">
+              <img src="img/product-4.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <figcaption><a href="#">Селфи-палка "Следуй за мной"</a><span class="catalog-item-price">4 900 руб.</span></figcaption>
             </figure>
             <div class="catalog-item-hover">
@@ -196,6 +200,7 @@
 
       <div class="filter-right-wr"></div>
 
+    </div>
     </div>
   </main>
   <!-- Start of footer -->
