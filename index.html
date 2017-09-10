@@ -23,20 +23,17 @@
           <button class="search-form-btn" type="submit" name="submit" value="Найти">Найти</button>
         </form>
         <ul class="catalog-nav">
-          <a href="catalog.html">Каталог товаров
-                <span class="catalog-nav-plus">+</span>
-          </a>
-          <!-- <li>
+          <li>
+            <a class="catalog-link">Каталог товаров</a>
             <ul class="catalog-nav-sub-menu">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Фитнес-браслеты</a></li>
               <li><a href="#">Квадрокоптеры</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="catalog.html">Моноподы для селфи</a></li>
               <li><a href="#">Умные часы</a></li>
               <li><a href="#">Экшн-камеры</a></li>
             </ul>
           </li>
-        -->
         </ul>
       </nav>
       <!--Start right side of header -->
@@ -65,6 +62,11 @@
     <!-- Start of promo-slider -->
     <section class="slider">
       <h2 class="visually-hidden">Слайдер промо</h2>
+
+      <input class="visually-hidden" type="radio" id="slide-1" name="slider" checked>
+      <input class="visually-hidden" type="radio" id="slide-2" name="slider">
+      <input class="visually-hidden" type="radio" id="slide-3" name="slider">
+      
       <section class="slider-inner-photo slide-1">
 
         <div class="slider-wr">
@@ -76,21 +78,15 @@
             <span class="number-slide">01</span>
             <h3 class="slide-header">Делай селфи, <br> как Бен Стиллер!</h3>
             <p class="slide-desc">
-              Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              Самая длинная палка для селфи доступна в нашем магазине. Восемь&nbsp;(Восемь, Карл!) метров длиной и весом всего 5 килограмм.
             </p>
 
             <div class="slider-nav">
               <a class="slide-more btn" href="#"><span>Подробнее</span></a>
               <div class="slider-controls">
-                <label for="slide-1" tabindex="0">
-                  <input type="radio" id="slide-1" name="slider" checked>
-                </label>
-                <label for="slide-2" tabindex="0">
-                  <input type="radio" id="slide-2" name="slider">
-                </label>
-                <label for="slide-3" tabindex="0">
-                    <input type="radio" id="slide-3" name="slider">
-                </label>
+                <label for="slide-1" tabindex="0"></label>
+                <label for="slide-2" tabindex="0"></label>
+                <label for="slide-3" tabindex="0"></label>
               </div>
             </div>
 
@@ -108,14 +104,18 @@
             </table>
 
           </div>
+
         </div>
       </section>
 
       <section class="slider-inner-photo slide-2">
+
         <div class="slider-wr">
+
           <div class="slider-slides">
             <img class="slider-pic" src="img/slider-2.png" height="485" width="345" alt="Фото фитнесс-браслета">
           </div>
+
           <div class="slider-info">
             <span class="number-slide">02</span>
             <h3 class="slide-header">Худеем <br> правильно!</h3>
@@ -128,11 +128,9 @@
                 <label for="slide-1"></label>
                 <label for="slide-2"></label>
                 <label for="slide-3"></label>
-                <input type="radio" id="slide-1" name="slider" checked>
-                <input type="radio" id="slide-2" name="slider">
-                <input type="radio" id="slide-3" name="slider">
               </div>
             </div>
+
             <table class="slide-features">
               <tr class="slide-features-item">
                 <td class="slide-features-type">Без подзарядки</td>
@@ -146,13 +144,18 @@
               </tr>
             </table>
           </div>
+
         </div>
+
       </section>
+
       <section class="slider-inner-photo slide-3">
+
         <div class="slider-wr">
           <div class="slider-slide">
             <img class="slider-pic" src="img/slider-3.png" height="334" width="526" alt="Фото квадрокоптера">
           </div>
+
           <div class="slider-info">
             <span class="number-slide">03</span>
             <h3 class="slide-header">Порхает как бабочка, жалит как пчела!</h3>
@@ -165,11 +168,9 @@
                 <label for="slide-1"></label>
                 <label for="slide-2"></label>
                 <label for="slide-3"></label>
-                <input type="radio" id="slide-1" name="slider" checked>
-                <input type="radio" id="slide-2" name="slider">
-                <input type="radio" id="slide-3" name="slider">
               </div>
             </div>
+
             <table class="slide-features">
               <tr class="slide-features-item">
                 <td class="slide-features-type">Дальность полета</td>
@@ -183,7 +184,9 @@
               </tr>
             </table>
           </div>
+
         </div>
+
       </section>
     </section>
     <!-- End of promo-slider -->
@@ -215,18 +218,18 @@
           <label class="btn btn-service" for="credit-slide" tabindex="0"><span>Кредит</span></label>
         </div>
         <div class="services-slider-info">
-          <div class="slide-delivery">
+          <div class="serv-slide slide-delivery">
             <h3 class="slide-header">Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-          <!--<div class="slide-warranty">
+          <div class="serv-slide slide-warranty">
             <h3 class="slide-header">Гарантия</h3>
             <p>Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
           </div>
-          <div class="slide-credit">
+          <div class="serv-slide slide-credit">
             <h3 class="slide-header">Кредит</h3>
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </div>-->
+          </div>
         </div>
       </div>
     </section>
