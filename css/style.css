@@ -104,8 +104,7 @@ img {
 }
 
 .main-header .header-logo:active,
-.main-header a:active,
-{
+.main-header a:active {
   opacity: 0.3;
 }
 
