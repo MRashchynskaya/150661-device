@@ -1633,8 +1633,7 @@ span.catalog-item {
   opacity: 0.6;
 }
 
-.footer-social .footer-social-item:active,
-{
+.footer-social .footer-social-item:active {
   opacity: 0.1;
 }
 
