@@ -127,7 +127,7 @@ img {
   line-height: 24px;
   background-color: inherit;
   text-transform: none;
-  letter-spacing: initial;
+  letter-spacing: 0.15px;
 }
 
 .search-form {
