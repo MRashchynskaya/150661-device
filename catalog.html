@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://sdnjis.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
@@ -16,11 +16,10 @@
       <!--Start left side of header -->
       <nav class="left-side-header">
         <a class="header-logo" href="index.html">
-          <img src="img/main-logo.png" width="164" height="36" alt="Логотип интернет-магазина портативных устройств Device">Главная страница интернет-магазина портативных устройств Device
-        </a>
-        <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-          <label for="search-form"></label>
-          <input type="search" name="search" placeholder="Поиск по сайту" id="search-form">
+            <img src="img/main-logo.png" width="164" height="36" alt="Логотип интернет-магазина портативных устройств Device">
+          </a>
+        <form class="search-form" method="get" action="#">
+          <input type="search" name="search" placeholder="Поиск по сайту">
           <button class="search-form-btn" type="submit" name="submit" value="Найти">Найти</button>
         </form>
         <ul class="catalog-nav">
@@ -41,7 +40,7 @@
       <nav class="right-side-header">
         <div class="user-block-wrap">
           <ul class="user-block">
-            <li><a class="user-link" href="profile.html">Валентин Петухов</a></li>
+            <li class="user-link"><a href="profile.html">Валентин Петухов</a></li>
             <li class="exit-link"><a href="#">Выйти</a></li>
           </ul>
           <ul class="user-block">
@@ -235,7 +234,7 @@
   <footer class="main-footer">
     <div class="container">
       <div class="footer-left">
-        <a class="footer-logo"><span class="visually-hidden">Главная страница интернет-магазина портативных устройств Device</span>
+        <a class="footer-logo">
           <img src="img/footer-logo.png" width="163" height="36" alt="Логотип интернет-магазина портативных устройств Device">
         </a>
         <p class="address">г. Москва, ул. Строителей, 15</p>

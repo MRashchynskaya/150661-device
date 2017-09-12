@@ -16,23 +16,22 @@
       <!--Start left side of header -->
       <nav class="left-side-header">
         <a class="header-logo">
-          <img src="img/main-logo.png" width="164" height="36" alt="Логотип интернет-магазина портативных устройств Device">Главная страница интернет-магазина портативных устройств Device
+          <img src="img/main-logo.png" width="164" height="36" alt="Логотип интернет-магазина портативных устройств Device">
         </a>
-        <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-          <label for="search-form"></label>
-          <input type="search" name="search" placeholder="Поиск по сайту" id="search-form">
+        <form class="search-form" method="get" action="#">
+          <input type="search" name="search" placeholder="Поиск по сайту">
           <button class="search-form-btn" type="submit" name="submit" value="Найти">Найти</button>
         </form>
         <ul class="catalog-nav">
           <li>
             <a class="catalog-link">Каталог товаров</a>
             <ul class="catalog-nav-sub-menu">
-              <li><a href="catalog.html">Виртуальная реальность</a></li>
-              <li><a href="catalog.html">Фитнес-браслеты</a></li>
-              <li><a href="catalog.html">Квадрокоптеры</a></li>
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">Квадрокоптеры</a></li>
               <li><a href="catalog.html">Моноподы для селфи</a></li>
-              <li><a href="catalog.html">Умные часы</a></li>
-              <li><a href="catalog.html">Экшн-камеры</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
             </ul>
           </li>
         </ul>
@@ -79,9 +78,9 @@
             <div class="slider-nav">
               <div class="link-wr"><a class="slide-more btn" href="#">Подробнее</a></div>
               <div class="slider-controls">
-                <label for="slide-1" aria-label="Слайд №1" tabindex="0"></label>
-                <label for="slide-2" aria-label="Слайд №2" tabindex="0"></label>
-                <label for="slide-3" aria-label="Слайд №3" tabindex="0"></label>
+                <label for="slide-1" tabindex="0"></label>
+                <label for="slide-2" tabindex="0"></label>
+                <label for="slide-3" tabindex="0"></label>
               </div>
             </div>
             <table class="slide-features">
@@ -248,11 +247,9 @@
         <article class="about-us">
           <h2 class="info-header">О нас</h2>
           <p>
-            Огромный выбор гаджетов не оставит равнодушным гика, который&nbsp;есть&nbsp;в&nbsp;каждом из нас.
-          </p>
+            Огромный выбор гаджетов не оставит равнодушным гика, который&nbsp;есть&nbsp;в&nbsp;каждом из нас.</p>
           <p>
-            Мы можем доставить ваш товар в самые отдаленные точки России!&nbsp;DEVICE&nbsp;работает со многими транспортными компаниями:
-          </p>
+            Мы можем доставить ваш товар в самые отдаленные точки России!&nbsp;DEVICE&nbsp;работает со многими транспортными компаниями:</p>
           <ul>
             <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
@@ -263,14 +260,11 @@
         <article class="contacts">
           <h2 class="info-header">Контакты</h2>
           <p>
-            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
-          </p>
-          <p class="map-popup-show">
-            <a class="map-prev" href="https://yandex.by/maps/213/moscow/?ncrnd=2460&ll=37.529654%2C55.686980&z=17&mode=search&text=г.%20Москва%2C%20ул.%20Строителей%2C%2015&sll=27.561831%2C53.905906&sspn=0.474472%2C0.172725">
-              <img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
-            </a>
-          </p>
-          <div class="link-wr"><a class="btn btn-write-us" href="#">Напишите нам</a></div>
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <p><a class="map-prev" href="https://yandex.by/maps/213/moscow/?ncrnd=2460&ll=37.529654%2C55.686980&z=17&mode=search&text=г.%20Москва%2C%20ул.%20Строителей%2C%2015&sll=27.561831%2C53.905906&sspn=0.474472%2C0.172725">
+                  <img src="img/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
+                </a>
+            <div class="link-wr"><a class="btn" href="#">Напишите нам</a></div>
         </article>
       </div>
     </section>
@@ -280,9 +274,9 @@
   <footer class="main-footer">
     <div class="container">
       <div class="footer-left">
-        <a class="footer-logo"><span class="visually-hidden">Главная страница интернет-магазина портативных устройств Device</span>
+        <a class="footer-logo">
             <img src="img/footer-logo.png" width="163" height="36" alt="Логотип интернет-магазина портативных устройств Device">
-        </a>
+          </a>
         <p class="address">г. Москва, ул. Строителей, 15</p>
       </div>
       <div class="footer-center">
@@ -328,7 +322,7 @@
       <div class="popup-btn-wr">
         <button class="submit-btn btn" type="submit">Отправить</button>
       </div>
-      <button class="close-btn close-btn-write-us" type="button">Закрыть</button>
+      <button class="close-btn" type="button">Закрыть</button>
     </form>
   </section>
   <!-- End of write us form -->
@@ -339,10 +333,9 @@
     <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sby!4v1503052249301"><img src="img/map-popup.jpg" width="960" height="559" alt="г. Москва, ул. Строителей, 15"></a>
     -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sby!4v1503052249301" allowfullscreen></iframe>
-    <button class="close-btn close-btn-map" type="button">Закрыть</button>
+    <button class="close-btn" type="button">Закрыть</button>
   </section>
   <!-- End of map popup -->
-  <script src="js/script.min.js"></script>
 </body>
 
 </html>
